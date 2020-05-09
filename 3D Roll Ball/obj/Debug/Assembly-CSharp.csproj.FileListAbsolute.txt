@@ -1,0 +1,2 @@
+F:\Learning Unity\2D Test\3D Roll Ball\New Unity Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+F:\Learning Unity\2D Test\3D Roll Ball\New Unity Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
