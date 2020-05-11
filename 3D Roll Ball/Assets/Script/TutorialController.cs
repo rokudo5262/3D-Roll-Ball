@@ -10,13 +10,10 @@ public class TutorialController : MonoBehaviour
     public Text countText;
     public Text winText;
     private int count_point;
-    private int count_danger;
-    private int life_point;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         count_point = 0;
-        count_danger = 0;
         SetCountText();
         winText.text = "";
         

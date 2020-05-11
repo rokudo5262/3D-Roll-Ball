@@ -74,14 +74,17 @@ public class PlayerController : MonoBehaviour
         if (count_point == 60 && count_danger < 2)
         {
             winText.text = "You Win";
+            Time.timeScale = 0f;
         }
         if(count_point < 60 && count_danger == 2)
         {
             winText.text = "You Lose";
+            Time.timeScale = 0f;
         }
         if(life_point == 0)
         {
             winText.text = "You Lose";
+            Time.timeScale = 0f;
         }
     }
 }
