@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniMap : MonoBehaviour
+public class Minimap : MonoBehaviour
 {
-    // public static Minimap Instance { get; private set; }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform player;
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        Vector3 newPosition = player.position;
+        newPosition.y = transform.position.y;
+        transform.position = newPosition;
+        transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);
     }
 }
